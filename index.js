@@ -9,7 +9,7 @@ const port = process.env.PORT || 5000;
 
 // middleware
 app.use(cors({
-    origin: 'https://car-doctor-fdee9.web.app',
+    origin: ['https://car-doctor-fdee9.web.app', 'https://car-doctor-me.netlify.app/'],
     credentials: true,
 }));
 app.use(express.json());
